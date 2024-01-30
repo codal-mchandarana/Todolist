@@ -1,0 +1,19 @@
+/* Deleting element from the list */
+
+const AddingListner = () => {
+    let deleteArray = document.getElementsByClassName('delete')
+
+    for (item of deleteArray) {
+        item.addEventListener("click", (event) => {
+            let valueOfDeletedEntry = event.target.parentElement.parentElement.children[0].innerHTML;
+
+            let elementToBeDeleted = event.target.parentElement.parentElement.parentElement;
+            elementToBeDeleted.remove()
+
+            newArr = arr.filter((task) => {
+                return task !== valueOfDeletedEntry
+            })
+            arr = newArr
+        })
+    }
+}

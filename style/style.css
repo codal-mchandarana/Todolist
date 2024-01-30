@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 95%;
+    /* 15.2 px */
+    color: white;
+}
+
+#contain::before {
+    background: url('../static/bg3.jpg') center center/cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#contain {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/*********** To do list  ***********/
+
+#list {
+    display: flex;
+    column-gap: 6rem;
+}
+
+#part_1 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+#part_2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.list-item {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    padding: 0.75rem 1rem 0.75rem 1.5rem;
+    border: 2px solid white;
+    width: 21rem;
+    max-width: 20rem;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+
+    background-color: white;
+    color: black;
+
+    border-radius: 0.5rem;
+}
+
+.text{
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 1.25rem
+}
+
+
+.top-portion {
+    display: grid;
+    grid-template-columns: 12fr 1fr;
+}
+
+.arrow {
+    display: flex;
+    justify-content: flex-end;
+    gap: 7px;
+    align-items: center;
+}
+
+
+/* allow css */
+
+.fa-solid {
+    cursor: pointer;
+}
+
+.line {
+    text-decoration: line-through;
+}
+
+/***********  Buttons ***********/
+.btn {
+    height: 2.5rem;
+    position: relative;
+    bottom: 2px;
+}
+
+.border {
+    width: 50rem;
+}
+
+.delete {
+    color: red;
+    text-align: center;
+}
+
+/*********** Input box ***********/
+
+#input-val {
+    width: 30rem;
+    height: 2.5rem;
+    padding-left: 1rem;
+}
+
+#border-left {
+    border-left: 2px solid white;
+    height: inherit
+}
